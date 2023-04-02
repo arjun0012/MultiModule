@@ -11,5 +11,8 @@ lazy val root = (project in file("."))
 lazy val module1=project
 
 lazy val module2=project
+  .settings(
+    libraryDependencies +="org.scalatest" %% "scalatest" % "3.2.15" % Test
+  )
 
 lazy val common =project.dependsOn(module1,module2)
