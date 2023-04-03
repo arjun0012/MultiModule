@@ -1,4 +1,4 @@
-object core extends App{
+object Core extends App{
   val myClass = MyClass()
   val arithmetic = Arithmetic()
   val (a,b) = myClass.input()
